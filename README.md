@@ -6,7 +6,7 @@ The following is an illustration of how we can apply an **MVC** concept to our *
 
 - node v14.15.4
 - setup mongodb and update db connection path located at <a href=".env">.env</a>
-- Major Code Reference are at <a href="app/routes/gic">Routes</a>, <a href="app/controllers/gic">Controller</a>, <a href="app/models/gic">Schema</a>, <a href="configs/Connection.js">Mongo Connection Config</a>
+- Major Code Reference are at <a href="app/routes/gic">Routes</a>, <a href="app/controllers/gic">Controller</a>, <a href="app/models">Schema</a>, <a href="configs/Connection.js">Mongo Connection Config</a>
 
 #### How to Run:
 
