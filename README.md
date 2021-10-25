@@ -5,7 +5,7 @@ The following is an illustration of how we can apply an **MVC** concept to our *
 #### Prerequisites:
 
 - node v14.15.4
-- setup mongodb
+- setup mongodb and update db connection path located at <a href=".env">.env</a>
 
 #### How to Run:
 
