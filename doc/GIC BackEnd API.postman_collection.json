@@ -1,0 +1,205 @@
+{
+	"variables": [],
+	"info": {
+		"name": "GIC BackEnd API",
+		"_postman_id": "6e86fd1a-5a21-7a7a-33ad-8dd720f06f33",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Drinks",
+			"description": "",
+			"item": [
+				{
+					"name": "GET Coffee & Beers",
+					"request": {
+						"url": "http://localhost:3000/drinks",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Coffee",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3000/drinks?type=coffee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"drinks"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "coffee",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Beers",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3000/drinks?type=beer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"drinks"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "beer",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cafes",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Cafe",
+					"request": {
+						"url": "http://localhost:3000/cafe",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Cafeteria\",\n\t\"employees\":22,\n\t\"description\":\"cafe located in singapore with multiple menus\",\n\t\"location\":\"singapore\",\n\t\"logo\":\"https://coffee.alexflipnote.dev/2GiUIZKXR1s_coffee.jpg\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add New Employee",
+					"request": {
+						"url": "http://localhost:3000/cafe/employee",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"aswin\",\n\t\"cafe\":\"KFC\",\n\t\"days_worked\":33\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Cafe Locations",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3000/cafes?location=singapore",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cafes"
+							],
+							"query": [
+								{
+									"key": "location",
+									"value": "singapore",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"test\",\n\t\"employees\":22,\n\t\"description\":\"testqq\",\n\t\"location\":\"india\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cafe Employees",
+					"request": {
+						"url": "http://localhost:3000/cafes/employees",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"test\",\n\t\"cafe\":\"KFC\",\n\t\"days_worked\":33\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
