@@ -32,8 +32,10 @@ The following is an illustration of how we can apply an **MVC** concept to our *
 | Get Locations | http://localhost:3000/cafes?location=singapore | GET |
 | Get Employees | http://localhost:3000/cafes/employees | GET |
 
- - For API Postman Collection Located At ./doc/GIC BackEnd API.postman_collection.json
+ - For API Postman Collection Located At **./doc/GIC BackEnd API.postman_collection.json**
 
+
+<a href="doc/GIC BackEnd API.postman_collection.json"> Click here for API Postman Collection</a>
 
 #### Folder Structure:
 
